@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mini-webapp-deployment
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: mini-webapp
+
+  template:
+    metadata:
+      labels:
+        app: mini-webapp
+
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: html-volume
+              mountPath: /usr/share/nginx/html/index.html
+              subPath: index.html
+
+      volumes:
+        - name: html-volume
+          configMap:
+            name: mini-webapp-html
