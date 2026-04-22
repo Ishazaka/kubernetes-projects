@@ -1,0 +1,9 @@
+{
+    "name": "mini-k8s-backend",
+    "version": "1.0.0",
+    "description": "Small backend for learning Kubernetes",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    }
+}
