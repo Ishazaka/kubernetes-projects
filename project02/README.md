@@ -1,4 +1,4 @@
-## Cluster Type: Kind
+# Cluster Type: Kind
 
 ## base Image
 Nignx:latest
