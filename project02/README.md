@@ -1,12 +1,12 @@
-### Cluster Type: 
+#### Cluster Type: 
 Kind
 
-### base Image
+#### base Image
 Nignx:latest
 
-### yaml files
+#### yaml files
 deployment.yaml
 service.yaml
-configMap.yaml
+configmap.yaml
 
 
